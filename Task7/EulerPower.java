@@ -2,7 +2,6 @@ package Task7;
 
 public class EulerPower {
 
-    // НОД
     static long gcd(long a, long b) {
         while (b != 0) {
             long t = a % b;
@@ -12,7 +11,6 @@ public class EulerPower {
         return Math.abs(a);
     }
 
-    // Быстрое возведение в степень
     static long modPow(long a, long n, long m) {
         if (m == 1)
             return 0;
@@ -31,7 +29,6 @@ public class EulerPower {
         return result;
     }
 
-    // φ(n)
     static long eulerPhi(long n) {
         long result = n;
         long temp = n;
@@ -57,7 +54,6 @@ public class EulerPower {
         return result;
     }
 
-    // Теорема Эйлера
     static long modPowEuler(long a, long n, long m) {
         if (m == 1)
             return 0;
